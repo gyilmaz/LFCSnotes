@@ -59,5 +59,13 @@ tar xvf myfiles.tar
   Filters
   find,grep, tee, tr, wc
   
+  AWK COURSE
+  changing default separator
+  awk 'BEGIN{FS=","}{ print $2}' //begin similar to before all
+  RS is the record seperator normally new line but it can be set other charachers ex:
+  awk 'BEGIN{RS="!";FS=","}{ print $2}' 
+  OFS AND ORS is output 
+  
+  awk 'BEGIN{FS="," ; OFS="\t" } {print $1,$2,$3}' nameemailavg.csv make column separated file to tab sepearated 
   
   
